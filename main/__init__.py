@@ -12,12 +12,19 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
                     level=logging.WARNING)
 
 # variables
-API_ID = config("API_ID", default=None, cast=int)
-API_HASH = config("API_HASH", default=None)
-BOT_TOKEN = config("BOT_TOKEN", default=None)
-SESSION = config("SESSION", default=None)
-FORCESUB = config("FORCESUB", default=None)
-AUTH = config("AUTH", default=None, cast=int)
+API_ID = 24419043
+API_HASH = 2259dd677c99132d1fdb9b8e6c68a4ce
+BOT_TOKEN = 6653136127:AAE4dfXRzH7nHgrixQ7BnWr6KDAaVPShglk
+SESSION = 1BVtsOH4BuySAWiSHWh8HxZlNjw0hCW9x70ryP9WgqR-STPoPA4elBk-2QoIO853QOjcAm3xuPP0qC3nT4H1UGEgkw09c-h2UVxu4122bAFW16dyxVlKUIV24gjQwHRHPHPZqLQYL6sI4CMTtpVWMPuC1Bmj6BDiDp_vUzcdNQZv3qDsmollzi4uUIoe6XbqH-0oQ6ALUcfxDPydb70Qq15VhB_rdQF-YUl1AsgAa2fI6_9JOsyRpH-S-5OJWy_BWoUiOYcQdiTS84Uaf20jHJUek29vD0Cp42REI19vqwKtHWsy_-RMdWA50QCMyizSr_mrR44lTP4-O67zoZ9MvcmJuzNHmwkU=
+FORCESUB = "DroneBots"
+AUTH = 1058482162
+
+sudo apt update
+sudo apt install ffmpeg git python3-pip
+git clone your_repo_link
+cd saverestrictedcontentbot 
+pip3 install -r requirements.txt
+python3 -m main
 
 bot = TelegramClient('bot', API_ID, API_HASH).start(bot_token=BOT_TOKEN) 
 
